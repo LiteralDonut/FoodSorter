@@ -1,0 +1,51 @@
+HOW?
+the program will continuously spit out text for you to review in the following format:
+
+> ID: (ignore this)
+> Original: (what i stole from allrecipes.com)
+> Processed: (what the computer guessed was the food item)
+
+you will be prompted for if you agree or not with the computers guess. the input options are:
+1 - (YES, the computers guess was correct)
+0 - (NO, the computer was wrong)
+-1 - (SKIP, im not sure)
+exit - (for when youre tired of this bullshit)
+
+if you enter '0', it will prompt you for what the correct guess actually is.
+
+but what is actually correct or incorrect? also, why the hell are we doing this?
+
+WHY?
+the goal is to extract the name of the specific food items (what you would buy at the store), and remove any descriptors such as:
+- units, such as "pinch".
+- things that you would personally DO to the food item, such as "chopped".
+- descriptors that arent necessary to distinguish the food item, such as "fresh" or "organic".
+- descriptors that do distinguish a specific food item, but are really just a personal preference, such as "jasmine rice". Dude just say rice.
+
+below is a collection of examples of what to count as correct, incorrect, and which to just skip for now. when in doubt, just skip it.
+
+Correct:
+- Lemon Zest (adding zest is very different than adding lemon)
+- Lime Juice (when do you use an entire lime and not the juice?)
+- white sugar (keep descriptors to destinguish from brown sugar)
+- all purpose flour (different kinds of flour, not interchangable)
+- red bell pepper (colour is specific to the food)
+- tomato paste (reasonable to buy, rather than pureeing your own tomatoes)
+- sun dried tomato (same deal, different than just tomato, and you arent going to make it yourself)
+
+incorrect:
+- ground cinnamon -> cinnamon (ground is standard. if it meant cinnamon sticks, they would have specified that)
+- ground black pepper -> black pepper (again if the pepper isnt ground, it should say peppercorns)
+- jazmine rice -> rice (personal choice)
+- chicken bouillon granules -> chicken bouillon (granules is technically the unit the bouillon comes in)
+- dried basil leaves -> basil (personal preference)
+- kosher salt, sea salt -> salt (personal preference)
+- english cucumber -> cucumber (personal preference)
+- extra virgin olive oil -> olive oil (virgin / extra virgin are basically interchangable)
+- small avocado -> avocado (small avocado is not a different food than big avocado)
+
+skip over:
+- things that only have the name brand listed, and not the food item.
+- things that list multiple items in the sentence.
+- things that should NOT be bought, by anyone (packaged mashed potatoes)
+- things that dont have a quantity in the original. It was probably a subtitle.
